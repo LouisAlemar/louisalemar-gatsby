@@ -1,0 +1,337 @@
+@import '~bootstrap/scss/bootstrap';
+
+/* ==========================================================================
+   VARIABLES
+   ========================================================================== */
+
+	$black: rgb(0, 0, 0);
+	$white: rgb(255, 255, 255);
+
+	$blue_link: rgb(63,81,181);
+
+/* ==========================================================================
+   MEDIA QUERIES
+   ========================================================================== */
+
+	// $media0: ~"(min-width: 1440px)";
+	// $media0_: ~"(max-width: 1439px)";
+
+	// $media1: ~"(min-width: 1200px)";
+	// $media1_: ~"(max-width: 1199px)";
+
+	// $media2: ~"(min-width: 992px)";
+	// $media2_: ~"(max-width: 991px)";
+
+	// $media3: ~"(min-width: 768px)";
+	// $media3_: ~"(max-width: 767px)";
+
+	// $media4: ~"(min-width: 480px)";
+	// $media4_: ~"(max-width: 479px)";
+
+
+/* ==========================================================================
+   GLOBAL STYLES
+   ========================================================================== */
+
+	html{
+		font-size: 10px !important;
+	}
+
+	h1{
+		margin: 0px !important;
+	}
+
+	h2{
+		margin: 0px !important;
+	}
+
+	h3{
+		margin: 0px !important;
+	}
+
+	h4{
+		margin: 0px !important;
+	}
+
+	h5{
+		margin: 0px !important;
+	}
+
+	h6{
+		margin: 0px !important;
+	}
+
+	a{
+		color: $blue_link !important;
+		text-decoration: none;
+	}
+
+	.mdl-grid{
+		padding: 0px !important;
+		// .content{
+		// 	width: 80%;
+		// 	margin: 0 auto;
+		// }
+	}
+
+	.mdl-cell{
+		margin: 0px !important;
+		// width: 100% !important;
+		padding: 0rem 2rem !important;
+	}
+
+/* ==========================================================================
+   PAGE SPECIFIC STYLES
+   ========================================================================== */   
+
+	.header-color{
+		background: #373B44;
+		background: -webkit-linear-gradient(to left, #4286f4, #373B44);
+		background: linear-gradient(to left, #4286f4, #373B44);
+		a{
+			color: $white !important;
+		}
+	}
+
+	.landing-grid{
+		background: #373B44;
+		background: -webkit-linear-gradient(to left, #4286f4, #373B44);
+		background: linear-gradient(to left, #4286f4, #373B44);
+		text-align: center;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	.logo{
+		width: 20rem;
+		// @media screen and @media3_{
+		// 	width: 10rem;
+		// }
+		margin: 0 auto 3rem auto;
+		display: block;
+		padding-top: 10rem;
+		// @media screen and @media3_{
+		// 	padding-top: 5rem;
+		// }
+	}
+
+	.banner-text{
+		background-color: $black;
+		opacity: 0.8;
+		width: 75%;
+		padding: 1rem 0rem;
+		// @media screen and @media3_{
+		// 	width: 100%;
+		// }
+		margin: 0 auto;
+		border-radius: 1rem;
+		h1{
+			font-size: 6.6rem;
+			margin-bottom: 1rem;
+			// @media screen and @media3_{
+			// 	font-size: 3.5rem;
+			// }
+			font-weight: 800;
+			color: $white;
+		}
+		hr{
+			border-top: 0.5rem dotted $white;
+			width: 50%;
+			margin: 0 auto;
+		}
+		p{
+			color: $white;
+			font-size: 2rem;
+			padding: 1rem;
+		}
+		.social-links{
+			display: flex;
+			justify-content: space-between;
+			width: 20%;
+			// @media screen and @media3_{
+			// 	width: 50%;
+			// }
+			margin: 0 auto;
+			i{
+				color: $white;
+				font-size: 5rem;
+				padding: 0.8rem;
+			}
+		}
+	}
+
+	.CardActions{
+		display: flex;
+		justify-content: center;
+	}
+
+	.mdl-tabs{
+		margin-bottom: 4rem;
+	}
+
+	.projects-grid{
+		display: flex;
+		flex-wrap: wrap;
+		.mdl-card{
+			margin-bottom: 4rem !important;
+		}
+	}
+
+	.paddingBottom34{
+		padding-bottom: 3.4rem !important;
+	}
+
+	.paddingBottom88{
+		padding-bottom: 8.8rem !important;
+	}
+
+	.contact-body{
+		margin: auto;
+		position: fixed;
+		// @media screen and @media4_{
+		// 	position: relative;
+		// }
+		width: 100%;
+		height: 100%;
+		justify-content: center;
+		padding-top: 2rem;
+	}
+
+	.contact-grid{
+		text-align: center;
+		justify-content: center;
+		width: 80%;
+		height: 55rem;
+		background-color: white;
+		color: black;
+		margin-bottom: 2rem;
+		h2{
+			font-family: 'Anton', sans-serif;
+			margin-top: 2rem !important;
+		}
+		p{
+			font-family: 'Oxygen', sans-serif;
+			font-weight: 800;
+			// @media screen and @media3_{
+			// 	width: 100% !important;
+			// }
+		}
+		hr{
+			border-top: 5px dotted $black;
+			width: 50%;
+			margin: auto;
+		}
+	}
+
+	.contact-list{
+		.contact-list-content{
+			display: flex;
+			align-items: center !important;
+			// @media screen and @media4_{
+			// 	font-size: 20px;
+			// }
+			i{
+				font-size: 6.6rem;
+				padding-right: 5rem;
+				// @media screen and @media4_{
+				// 	display: none;
+				// }
+			}
+		}
+	}
+
+	.profile_pic{
+		margin: 2rem 0rem;
+		border-radius: 1rem;
+	}
+
+	.resume-right-col{
+		background-color: #27221F;
+		color: $white;
+		padding: 2rem !important;
+		margin-top: 2rem !important;
+	}
+
+	.mdl-card__title{
+		padding: 0rem !important;
+	}
+
+	.portfolio_item_header{
+		.mdl-card__title-text{
+			width: 100%;
+			padding: 1.6rem 1.6rem 0rem !important;
+			background-color: $white !important;
+		}
+	}
+
+    .nav-link {
+        font-size: 2rem;
+    }
+
+    .navbar-logo {
+        width: 50px;
+        height: auto;
+    }
+
+    .custom-navbar {
+        z-index: 99999999;
+    }
+
+    .progress {
+        width: 500px;
+    }
+
+    .resume-container {
+        padding: 0px 150px;
+
+        p {
+            margin-top: 1rem;
+            margin-bottom: 0;
+            font-size: 20px;
+        }
+        li {
+            font-size: 15px;
+        }
+    }
+
+    .btn-primary {
+        .button-link {
+            color: $white !important;
+        }
+    }
+
+    .category-tabs {
+        margin-top: 40px;
+
+        .row {
+            margin-bottom: 30px;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+        h5 {
+            font-size: 18px;
+            margin-bottom: 10px !important;
+        }
+
+        p{
+            font-size: 14px;
+        }
+
+        .card-btn {
+            margin-top: auto;
+
+            .button-link {
+                width: 100%;
+                display: block;
+                font-size: 20px;
+            }
+        }
+    }
+    }
