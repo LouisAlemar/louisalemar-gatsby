@@ -9,6 +9,7 @@ import Experience from '../components/experience/experience';
 import Skills from '../components/skills/skills';
 import profile_pic from '../images/profile_pic.jpg';
 import CustomNavbar from "../components/customNavbar/customNavbar.js";
+import "../styles/App.scss"
 
 class Resume extends Component {
 	render(){

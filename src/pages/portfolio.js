@@ -11,6 +11,7 @@ import marketingAutomationTour from '../images/marketing-automation-tour-full.pn
 import CustomNavbar from "../components/customNavbar/customNavbar.js";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import "../styles/App.scss"
 
 class Portfolio extends Component {
 	
