@@ -18,11 +18,13 @@ class App extends Component{
 							className="logo"
 						/>
 
-						<div className="banner-text">
-							<h1>Front-End Developer</h1>
-							<hr />
-							<p>Wordpress | HTML/CSS | JavaScript | PHP | React | NodeJS | MySQL</p>
-						</div>
+						<Container>
+							<div className="banner-text">
+								<h1>Front-End Developer</h1>
+								<hr />
+								<p>Wordpress | HTML/CSS | JavaScript | PHP | React | NodeJS | MySQL</p>
+							</div>
+						</Container>
 					</div>
 				</div>
 			</div>
