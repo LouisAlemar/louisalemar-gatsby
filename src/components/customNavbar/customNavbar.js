@@ -14,7 +14,7 @@ class CustomNavbar extends Component{
 			</Navbar.Brand>
 			<Navbar.Toggle aria-controls="basic-navbar-nav" />
 			<Navbar.Collapse id="basic-navbar-nav">
-				<Nav className="me-auto">
+				<Nav>
 				<Nav.Link href={`/resume`}>Resume</Nav.Link>
 				<Nav.Link href={`/portfolio`}>Portfolio</Nav.Link>
 				</Nav>

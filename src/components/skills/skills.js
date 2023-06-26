@@ -6,7 +6,7 @@ class Skills extends Component {
 		return(
 			<div>
 				<div col={12}>
-					<div style={{ display: 'flex', justifyContent: 'space-between' }}>{this.props.skill} <ProgressBar now={this.props.progress} label={`${this.props.progress}%`}/> </div>
+					<div style={{ display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }}><label>{this.props.skill}</label> <ProgressBar className="progress-bar" now={this.props.progress} label={`${this.props.progress}%`}/> </div>
 				</div>
 			</div>
 		)

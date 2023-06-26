@@ -28,7 +28,7 @@ class Resume extends Component {
                             </div>
 
                             <h2 style={{ paddingTop: '2rem' }}>Louis Alemar</h2>
-                            <h4 style={{ color: 'grey' }}>Front-End Developer</h4>
+                            <h4 style={{ color: 'white' }}>Front-End Developer</h4>
                             <hr style={{ borderTop: '3px solid rgb(72, 108, 175)', width: '100%' }}/>
                             <h5>Email</h5>
                             <p><a href="mailto:louisalemar@gmail.com">louisalemar@gmail.com</a></p>
@@ -106,42 +106,45 @@ class Resume extends Component {
 
                             <hr style={{ borderTop: '3px solid rgb(75, 114, 189)' }}/>
 
-                            <h2>Skills</h2>
+                            <div className="skills-container">
 
-                            <Skills
-                                skill='Wordpress'
-                                progress={100}
-                            />
+                                <h2>Skills</h2>
 
-                            <Skills
-                                skill='HTML/CSS'
-                                progress={100}
-                            />
+                                <Skills
+                                    skill='Wordpress'
+                                    progress={100}
+                                />
 
-                            <Skills
-                                skill='JavaScript'
-                                progress={100}
-                            />
+                                <Skills
+                                    skill='HTML/CSS'
+                                    progress={100}
+                                />
 
-                            <Skills
-                                skill='PHP'
-                                progress={90}
-                            />
+                                <Skills
+                                    skill='JavaScript'
+                                    progress={100}
+                                />
 
-                            <Skills
-                                skill='React'
-                                progress={80}
-                            />
+                                <Skills
+                                    skill='PHP'
+                                    progress={90}
+                                />
 
-                            <Skills
-                                skill='NodeJS'
-                                progress={70}
-                            />
+                                <Skills
+                                    skill='React'
+                                    progress={85}
+                                />
 
-                            <Skills
-                                skill='MySQL'
-                                progress={70}
-                            />
+                                <Skills
+                                    skill='NodeJS'
+                                    progress={70}
+                                />
+
+                                <Skills
+                                    skill='MySQL'
+                                    progress={70}
+                                />
+                            </div>
 
                         </div>
                     </div>
@@ -152,3 +155,10 @@ class Resume extends Component {
 }
 
 export default Resume;
+
+export const Head = () => (
+    <>
+        <title>Louis Alemar | Front-End Developer</title>
+        <script src="https://kit.fontawesome.com/458fac5c51.js" crossorigin="anonymous"></script>
+    </>
+)

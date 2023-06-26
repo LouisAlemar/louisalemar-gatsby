@@ -12,3 +12,10 @@ const IndexPage = () => {
 }
 
 export default IndexPage
+
+export const Head = () => (
+  <>
+    <title>Louis Alemar | Front-End Developer</title>
+    <script src="https://kit.fontawesome.com/458fac5c51.js" crossorigin="anonymous"></script>
+  </>
+)

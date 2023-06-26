@@ -13,20 +13,20 @@
    MEDIA QUERIES
    ========================================================================== */
 
-	// $media0: ~"(min-width: 1440px)";
-	// $media0_: ~"(max-width: 1439px)";
+	$media0: "(min-width: 1440px)";
+	$media0_: "(max-width: 1439px)";
 
-	// $media1: ~"(min-width: 1200px)";
-	// $media1_: ~"(max-width: 1199px)";
+	$media1: "(min-width: 1200px)";
+	$media1_: "(max-width: 1199px)";
 
-	// $media2: ~"(min-width: 992px)";
-	// $media2_: ~"(max-width: 991px)";
+	$media2: "(min-width: 992px)";
+	$media2_: "(max-width: 991px)";
 
-	// $media3: ~"(min-width: 768px)";
-	// $media3_: ~"(max-width: 767px)";
+	$media3: "(min-width: 768px)";
+	$media3_: 767px;
 
-	// $media4: ~"(min-width: 480px)";
-	// $media4_: ~"(max-width: 479px)";
+	$media4: "(min-width: 480px)";
+	$media4_: "(max-width: 479px)";
 
 
 /* ==========================================================================
@@ -35,6 +35,12 @@
 
 	html{
 		font-size: 10px !important;
+	}
+
+	body {
+		background: #373B44;
+		background: -webkit-linear-gradient(to left, #4286f4, #373B44);
+		background: linear-gradient(to left, #4286f4, #373B44);
 	}
 
 	h1{
@@ -103,19 +109,22 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
+		@media (max-width: $media3_) {
+			padding-top: 70px;
+		}
 	}
 
 	.logo{
 		width: 20rem;
-		// @media screen and @media3_{
-		// 	width: 10rem;
-		// }
+		@media (max-width: $media3_){
+			width: 10rem;
+		}
 		margin: 0 auto 3rem auto;
 		display: block;
 		padding-top: 10rem;
-		// @media screen and @media3_{
-		// 	padding-top: 5rem;
-		// }
+		@media (max-width: $media3_){
+			padding-top: 5rem;
+		}
 	}
 
 	.banner-text{
@@ -123,17 +132,17 @@
 		opacity: 0.8;
 		width: 75%;
 		padding: 1rem 0rem;
-		// @media screen and @media3_{
-		// 	width: 100%;
-		// }
+		@media (max-width: $media3_){
+			width: 100%;
+		}
 		margin: 0 auto;
 		border-radius: 1rem;
 		h1{
 			font-size: 6.6rem;
 			margin-bottom: 1rem;
-			// @media screen and @media3_{
-			// 	font-size: 3.5rem;
-			// }
+			@media (max-width: $media3_){
+				font-size: 3.5rem;
+			}
 			font-weight: 800;
 			color: $white;
 		}
@@ -146,20 +155,6 @@
 			color: $white;
 			font-size: 2rem;
 			padding: 1rem;
-		}
-		.social-links{
-			display: flex;
-			justify-content: space-between;
-			width: 20%;
-			// @media screen and @media3_{
-			// 	width: 50%;
-			// }
-			margin: 0 auto;
-			i{
-				color: $white;
-				font-size: 5rem;
-				padding: 0.8rem;
-			}
 		}
 	}
 
@@ -267,6 +262,10 @@
 		}
 	}
 
+	#basic-navbar-nav {
+		justify-content: flex-end;
+	}
+
     .nav-link {
         font-size: 2rem;
     }
@@ -280,21 +279,42 @@
         z-index: 99999999;
     }
 
-    .progress {
-        width: 500px;
-    }
-
     .resume-container {
-        padding: 0px 150px;
-
+		padding-bottom: 30px;
         p {
             margin-top: 1rem;
             margin-bottom: 0;
             font-size: 20px;
+			a {
+				color: white !important;
+			}
         }
         li {
             font-size: 15px;
         }
+		* {
+			color: white;
+		}
+
+		.skills-container {
+			padding: 0px 150px;
+
+			label {
+				font-size: 1.5rem;
+			}
+
+			.progress {
+				height: 20px;
+
+				.progress-bar {
+					font-size: 1.3rem;
+				}
+			}
+
+			@media (max-width: $media3_) {
+				padding: 0px;
+			}
+		}
     }
 
     .btn-primary {
@@ -308,30 +328,58 @@
 
         .row {
             margin-bottom: 30px;
+
+			@media (max-width: $media3_) {
+				margin-bottom: 0px;
+			}
+
+			.portfolio-card {
+				margin-bottom: 30px;
+				.card {
+					display: flex;
+					flex-direction: column;
+					text-align: center;
+			
+					h5 {
+						font-size: 18px;
+						margin-bottom: 10px !important;
+					}
+			
+					p {
+						font-size: 14px;
+					}
+			
+					.card-btn {
+						margin-top: auto;
+			
+						.button-link {
+							width: 100%;
+							display: block;
+							font-size: 20px;
+						}
+
+						svg {
+							margin-left: 5px;
+							transition: margin-left 0.5s ease-in-out;
+						}
+
+						&:hover {
+							cursor: pointer;
+							background-color: white;
+							border-color: white;
+							a {
+								color: #0d6efd !important;
+								// margin-left: 100px;
+							}
+							svg {
+								margin-left: 30px;
+							}
+						}
+					}
+				}
+
+			}
         }
 
-        .card {
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-
-        h5 {
-            font-size: 18px;
-            margin-bottom: 10px !important;
-        }
-
-        p{
-            font-size: 14px;
-        }
-
-        .card-btn {
-            margin-top: auto;
-
-            .button-link {
-                width: 100%;
-                display: block;
-                font-size: 20px;
-            }
-        }
-    }
+        
     }
