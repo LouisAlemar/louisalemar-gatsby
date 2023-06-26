@@ -90,9 +90,9 @@ class Resume extends Component {
 
                             <Experience
                                 startYear={2017}
-                                endYear='Present'
+                                endYear={2019}
                                 jobName='The Berman Group'
-                                jobTitle='Front-End Engineer'
+                                jobTitle='Front-End Developer'
                                 bullets={
                                     ['Created and maintained websites for various types of companies using React', 
                                     'Built backends with NodeJS, Express, Sequelize, and MySQL databases to serve data to frontend',

@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 class Education extends Component {
 	render() {
 		return(
-			<div>
+			<div className='education'>
 				<div col={4}>
-					<p>{this.props.startYear} -  {this.props.endYear}</p>
+					<h6>{this.props.startYear} -  {this.props.endYear}</h6>
 				</div>
 				<div col={8}>
 					<h4 style={{ marginTop: '0rem' }}>{this.props.schoolName}</h4>
